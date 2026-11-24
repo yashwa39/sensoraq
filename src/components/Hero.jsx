@@ -1,7 +1,19 @@
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, Scan, CheckCircle2, XCircle } from 'lucide-react';
+import { useRef } from 'react';
 
 const Hero = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+
+  const y1 = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -12,41 +24,36 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-forest">
+    <section ref={ref} id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-forest pt-20">
+      {/* Animated Geometric Shapes */}
+      <motion.div
+        style={{ y: y1, opacity }}
+        className="absolute top-20 right-10 w-64 h-64 border-2 border-lime/20 rounded-full"
+      />
+      <motion.div
+        style={{ y: y2, opacity }}
+        className="absolute bottom-20 left-10 w-48 h-48 border-2 border-sage/20"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+      />
+      <motion.div
+        style={{ y: y1, opacity }}
+        className="absolute top-40 left-1/4 w-32 h-32 border-2 border-lime/10 rotate-45"
+      />
+
       {/* Background Grid Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
           backgroundImage: `linear-gradient(#B7F36B 1px, transparent 1px), linear-gradient(90deg, #B7F36B 1px, transparent 1px)`,
           backgroundSize: '50px 50px'
         }} />
       </div>
 
-      {/* Animated Particles */}
-      <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-lime rounded-full"
-            initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-              opacity: Math.random() * 0.5
-            }}
-            animate={{
-              y: [null, Math.random() * window.innerHeight],
-              opacity: [null, 0, Math.random() * 0.5]
-            }}
-            transition={{
-              duration: 3 + Math.random() * 2,
-              repeat: Infinity,
-              ease: 'linear'
-            }}
-          />
-        ))}
-      </div>
-
       <div className="container-custom px-6 md:px-12 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <motion.div
+          style={{ scale, opacity }}
+          className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+        >
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -232,7 +239,7 @@ const Hero = () => {
               Automated
             </motion.div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Scroll Indicator */}

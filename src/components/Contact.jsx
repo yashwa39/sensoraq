@@ -8,7 +8,7 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section ref={ref} className="section-padding bg-gradient-to-b from-forest-light to-forest relative overflow-hidden">
+    <section id="contact" ref={ref} className="section-padding bg-gradient-to-b from-forest-light to-forest relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-lime/10 rounded-full blur-3xl animate-pulse-slow" />

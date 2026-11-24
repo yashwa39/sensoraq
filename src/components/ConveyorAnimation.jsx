@@ -21,7 +21,7 @@ const ConveyorAnimation = () => {
   };
 
   return (
-    <section ref={ref} className="section-padding bg-gradient-to-b from-forest-light to-forest relative overflow-hidden">
+    <section id="conveyor" ref={ref} className="section-padding bg-gradient-to-b from-forest-light to-forest relative overflow-hidden">
       <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

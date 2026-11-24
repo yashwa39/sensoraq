@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Radio, Cpu, GitBranch } from 'lucide-react';
+import GeometricShapes from './GeometricShapes';
 
 const Solution = () => {
   const ref = useRef(null);
@@ -32,7 +33,10 @@ const Solution = () => {
   ];
 
   return (
-    <section ref={ref} className="section-padding bg-gradient-to-b from-forest-light to-forest relative overflow-hidden">
+    <section id="solution" ref={ref} className="section-padding bg-gradient-to-b from-forest-light to-forest relative overflow-hidden">
+      {/* Animated Geometric Shapes */}
+      <GeometricShapes variant="squares" />
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%">

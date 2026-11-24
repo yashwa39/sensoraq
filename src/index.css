@@ -14,6 +14,11 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
+
+  button,
+  a {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime focus-visible:ring-offset-2 focus-visible:ring-offset-forest;
+  }
 }
 
 @layer components {

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Clock, Eye, TrendingDown } from 'lucide-react';
+import GeometricShapes from './GeometricShapes';
 
 const Problem = () => {
   const ref = useRef(null);
@@ -33,6 +34,9 @@ const Problem = () => {
 
   return (
     <section id="problem" ref={ref} className="section-padding bg-gradient-to-b from-forest to-forest-light relative overflow-hidden">
+      {/* Animated Geometric Shapes */}
+      <GeometricShapes variant="circles" />
+
       {/* Decorative Element */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-lime/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-sage/5 rounded-full blur-3xl" />

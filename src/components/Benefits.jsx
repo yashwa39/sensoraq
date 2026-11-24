@@ -39,7 +39,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section ref={ref} className="section-padding bg-forest relative overflow-hidden">
+    <section id="benefits" ref={ref} className="section-padding bg-forest relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-20 right-10 w-96 h-96 bg-lime/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-sage/5 rounded-full blur-3xl" />

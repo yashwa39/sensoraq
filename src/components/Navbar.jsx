@@ -34,7 +34,19 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const closeMobileMenu = (event) => {
+      if (event.key === 'Escape') {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', closeMobileMenu);
+    return () => window.removeEventListener('keydown', closeMobileMenu);
   }, []);
 
   const scrollToSection = (sectionId) => {
@@ -66,6 +78,7 @@ const Navbar = () => {
             className="flex items-center space-x-3 group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            aria-label="SensoraQ home"
           >
             <div className="w-10 h-10 bg-gradient-to-br from-lime to-sage rounded-lg flex items-center justify-center">
               <span className="text-forest text-xl font-bold font-heading">S</span>
@@ -111,6 +124,9 @@ const Navbar = () => {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 text-lime hover:bg-lime/10 rounded-lg transition-colors"
+            aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-navigation"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -121,6 +137,7 @@ const Navbar = () => {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
+            id="mobile-navigation"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}

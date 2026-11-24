@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { demoSamples, pathwayColors } from '../data/demoData';
 import { Activity, Thermometer, Droplets, Beaker, Eye, Radio, CheckCircle2, AlertTriangle, XCircle, Info } from 'lucide-react';
 
@@ -10,15 +10,28 @@ const QualityDemo = () => {
   const [selectedSample, setSelectedSample] = useState(demoSamples[0]);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [showResults, setShowResults] = useState(true);
+  const analysisTimerRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (analysisTimerRef.current) {
+        clearTimeout(analysisTimerRef.current);
+      }
+    };
+  }, []);
 
   const handleSampleSelect = (sample) => {
+    if (analysisTimerRef.current) {
+      clearTimeout(analysisTimerRef.current);
+    }
     setIsAnalyzing(true);
     setShowResults(false);
     setSelectedSample(sample);
     
-    setTimeout(() => {
+    analysisTimerRef.current = setTimeout(() => {
       setIsAnalyzing(false);
       setShowResults(true);
+      analysisTimerRef.current = null;
     }, 2000);
   };
 
@@ -32,7 +45,7 @@ const QualityDemo = () => {
   };
 
   return (
-    <section ref={ref} className="section-padding bg-forest relative overflow-hidden">
+    <section id="quality-demo" ref={ref} className="section-padding bg-forest relative overflow-hidden">
       <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

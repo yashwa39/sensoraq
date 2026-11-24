@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -53,37 +51,6 @@ const Footer = () => {
             <p className="text-sage leading-relaxed mb-6 max-w-md">
               Multi-sensor food quality detection and automated separation for smarter processing.
             </p>
-            {/* Social Links Placeholder */}
-            <div className="flex space-x-4">
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-lg bg-lime/10 border border-lime/20 flex items-center justify-center text-lime hover:bg-lime hover:text-forest transition-all"
-                aria-label="Twitter"
-              >
-                <Twitter size={18} />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-lg bg-lime/10 border border-lime/20 flex items-center justify-center text-lime hover:bg-lime hover:text-forest transition-all"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-lg bg-lime/10 border border-lime/20 flex items-center justify-center text-lime hover:bg-lime hover:text-forest transition-all"
-                aria-label="GitHub"
-              >
-                <Github size={18} />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-lg bg-lime/10 border border-lime/20 flex items-center justify-center text-lime hover:bg-lime hover:text-forest transition-all"
-                aria-label="Email"
-              >
-                <Mail size={18} />
-              </a>
-            </div>
           </div>
 
           {/* Product Links */}

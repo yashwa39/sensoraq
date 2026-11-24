@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import * as LucideIcons from 'lucide-react';
 import { sensors } from '../data/sensors';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import GeometricShapes from './GeometricShapes';
 
 const Technology = () => {
   const ref = useRef(null);
@@ -12,6 +13,7 @@ const Technology = () => {
 
   return (
     <section id="technology" ref={ref} className="section-padding bg-gradient-to-b from-forest to-forest-light relative overflow-hidden">
+      <GeometricShapes variant="mixed" />
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-lime/5 rounded-full blur-3xl animate-pulse-slow" />
