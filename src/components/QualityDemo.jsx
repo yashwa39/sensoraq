@@ -56,7 +56,7 @@ const QualityDemo = () => {
           </h2>
           
           <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed mb-4">
-            Explore how SensoraQ evaluates different food samples through multi-sensor inspection.
+            Explore multi-sensor inspection with interactive samples.
           </p>
 
           <div className="inline-flex items-center space-x-2 bg-amber/10 border border-amber/30 rounded-lg px-4 py-2 text-sm text-amber">

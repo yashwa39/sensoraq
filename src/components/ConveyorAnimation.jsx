@@ -46,7 +46,7 @@ const ConveyorAnimation = () => {
           </h2>
           
           <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed">
-            Watch how products are automatically separated based on quality analysis in real-time.
+            Products automatically sorted based on real-time quality analysis.
           </p>
         </motion.div>
 

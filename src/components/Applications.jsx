@@ -10,37 +10,37 @@ const Applications = () => {
   const applications = [
     {
       icon: Factory,
-      title: 'Fruit Processing Facilities',
-      description: 'Integration into fruit processing lines for real-time quality inspection during washing, sorting, and packaging operations.',
-      useCase: 'Fresh fruit processing plants',
+      title: 'Fruit Processing',
+      description: 'Real-time quality inspection during washing, sorting, and packaging.',
+      useCase: 'Processing plants',
       gradient: 'from-lime/20 to-green-500/20'
     },
     {
       icon: Package,
-      title: 'Food Packaging Industries',
-      description: 'Quality control checkpoints before packaging to ensure only approved products proceed to consumer distribution.',
-      useCase: 'Food packaging operations',
+      title: 'Food Packaging',
+      description: 'Quality checkpoints before packaging to ensure product standards.',
+      useCase: 'Packaging operations',
       gradient: 'from-blue-400/20 to-cyan-500/20'
     },
     {
       icon: Truck,
-      title: 'Export & Import Operations',
-      description: 'Inspection systems at export facilities and import receiving points to verify product quality meets international standards.',
-      useCase: 'International food trade',
+      title: 'Export & Import',
+      description: 'Inspection at export facilities and import receiving points.',
+      useCase: 'International trade',
       gradient: 'from-purple-400/20 to-pink-500/20'
     },
     {
       icon: Building2,
-      title: 'Industrial QC Departments',
-      description: 'Deployment within quality control laboratories and inspection stations as part of comprehensive food safety programs.',
-      useCase: 'Quality assurance labs',
+      title: 'Quality Control Labs',
+      description: 'Deployment within QC stations as part of food safety programs.',
+      useCase: 'QA laboratories',
       gradient: 'from-amber/20 to-orange-500/20'
     },
     {
       icon: Target,
-      title: 'Supply Chain Checkpoints',
-      description: 'Strategic positioning at critical points in agricultural supply chains to monitor and maintain product quality standards.',
-      useCase: 'Agricultural distribution',
+      title: 'Supply Chain',
+      description: 'Strategic checkpoints to monitor and maintain quality standards.',
+      useCase: 'Distribution networks',
       gradient: 'from-indigo-400/20 to-blue-500/20'
     }
   ];
@@ -78,7 +78,7 @@ const Applications = () => {
           </h2>
           
           <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed">
-            Multi-sensor food quality inspection for diverse industrial food processing environments.
+            Multi-sensor inspection for diverse industrial environments.
           </p>
         </motion.div>
 

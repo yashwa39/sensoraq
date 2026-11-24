@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sage leading-relaxed mb-6 max-w-md">
-              A proposed multi-sensor food quality detection and automated separation system designed to improve food processing through intelligent inspection and automated sorting.
+              Multi-sensor food quality detection and automated separation for smarter processing.
             </p>
             {/* Social Links Placeholder */}
             <div className="flex space-x-4">
@@ -129,7 +129,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-lime/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sage text-sm">
-              © {currentYear} SensoraQ. A proposed food quality intelligence system.
+              © {currentYear} SensoraQ. Intelligent food quality inspection.
             </div>
             <div className="flex items-center space-x-6 text-sage text-sm">
               <span className="font-mono">

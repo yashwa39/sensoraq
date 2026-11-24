@@ -12,21 +12,21 @@ const Solution = () => {
       icon: Radio,
       title: 'SENSE',
       subtitle: 'Multi-sensor data collection',
-      description: 'Multiple sensors simultaneously collect food-quality information — gas composition, temperature, humidity, pH, colour, and spectroscopic data.',
+      description: 'Gas, temperature, pH, humidity, colour, and spectroscopic sensors work simultaneously.',
       color: 'from-lime to-green-400'
     },
     {
       icon: Cpu,
       title: 'ANALYSE',
       subtitle: 'Intelligent processing',
-      description: 'Processing systems evaluate readings against defined quality parameters using digital logic and microcontroller algorithms.',
+      description: 'Digital logic and microcontrollers evaluate readings against quality parameters.',
       color: 'from-cyan-400 to-blue-400'
     },
     {
       icon: GitBranch,
       title: 'SEPARATE',
       subtitle: 'Automated sorting',
-      description: 'The automated mechanism directs good-quality and suspect products into separate paths based on real-time analysis.',
+      description: 'Products are automatically directed to appropriate paths based on analysis.',
       color: 'from-purple-400 to-pink-400'
     }
   ];
@@ -69,7 +69,7 @@ const Solution = () => {
           </h2>
           
           <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed">
-            SensoraQ combines multiple sensing technologies with automated decision-making to identify and separate food products based on quality.
+            Multi-sensor analysis. Intelligent processing. Automated sorting.
           </p>
         </motion.div>
 
@@ -147,10 +147,10 @@ const Solution = () => {
         >
           <div className="bg-gradient-to-r from-forest-light/50 to-forest-light/30 border border-lime/20 rounded-2xl p-8 md:p-12">
             <h3 className="text-2xl font-heading font-bold text-white mb-4">
-              A comprehensive approach to food quality
+              A comprehensive approach
             </h3>
             <p className="text-sage text-lg leading-relaxed mb-6">
-              SensoraQ integrates multiple sensing technologies — from gas detection to spectroscopy — with digital processing systems. The system evaluates products against defined quality parameters and automatically separates them based on the analysis.
+              Multiple sensing technologies work together with digital processing to evaluate products and automatically separate them by quality.
             </p>
             <div className="grid sm:grid-cols-3 gap-6">
               <div className="text-center">

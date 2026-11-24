@@ -12,29 +12,29 @@ const Benefits = () => {
       number: '01',
       icon: Radar,
       title: 'Multi-sensor inspection',
-      description: 'Comprehensive quality assessment through multiple sensing modalities — gas, temperature, pH, humidity, colour, and spectroscopic analysis working together.',
-      value: 'Enhanced detection capability'
+      description: 'Comprehensive quality assessment through gas, temperature, pH, humidity, colour, and spectroscopy.',
+      value: 'Enhanced detection'
     },
     {
       number: '02',
       icon: Activity,
-      title: 'Real-time quality monitoring',
-      description: 'Continuous evaluation of food products as they move through the processing line, enabling immediate identification of quality deviations.',
-      value: 'Faster response time'
+      title: 'Real-time monitoring',
+      description: 'Continuous evaluation as products move through processing, enabling immediate response.',
+      value: 'Faster decisions'
     },
     {
       number: '03',
       icon: GitBranch,
-      title: 'Automated product separation',
-      description: 'Mechanical sorting system automatically directs products to appropriate pathways based on quality classification, reducing manual intervention.',
+      title: 'Automated separation',
+      description: 'Mechanical sorting directs products to appropriate pathways based on quality.',
       value: 'Improved efficiency'
     },
     {
       number: '04',
       icon: TrendingUp,
-      title: 'Improved quality control',
-      description: 'Systematic quality assessment based on defined parameters provides consistent, objective evaluation beyond human visual inspection capabilities.',
-      value: 'Better quality assurance'
+      title: 'Better quality control',
+      description: 'Consistent, objective evaluation beyond human visual inspection capabilities.',
+      value: 'Quality assurance'
     }
   ];
 
@@ -68,7 +68,7 @@ const Benefits = () => {
           </h2>
           
           <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed">
-            SensoraQ brings measurable improvements to food processing operations through intelligent automation.
+            Measurable improvements through intelligent automation.
           </p>
         </motion.div>
 
@@ -124,10 +124,10 @@ const Benefits = () => {
         >
           <div className="inline-block bg-gradient-to-r from-forest-light/80 to-forest-light/40 border border-lime/20 rounded-2xl px-12 py-8">
             <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-4">
-              Ready to explore intelligent food quality inspection?
+              Ready to explore intelligent inspection?
             </h3>
             <p className="text-sage mb-6 max-w-2xl">
-              Discover how multi-sensor technology and automated separation can enhance your food processing operations.
+              Discover how multi-sensor technology enhances food processing operations.
             </p>
             <button 
               onClick={() => {

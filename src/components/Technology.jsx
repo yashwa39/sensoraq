@@ -42,7 +42,7 @@ const Technology = () => {
           </h2>
           
           <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed">
-            SensoraQ combines diverse sensing technologies to build a comprehensive quality profile for each food product.
+            Diverse sensing technologies for comprehensive quality profiles.
           </p>
         </motion.div>
 

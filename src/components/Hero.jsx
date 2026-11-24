@@ -85,7 +85,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-lg md:text-xl text-sage leading-relaxed max-w-2xl"
             >
-              SensoraQ brings intelligent multi-sensor inspection and automated food separation together — helping food processors identify potential spoilage and adulteration before defective products move further down the line.
+              Intelligent multi-sensor inspection. Automated separation. Real-time quality decisions.
             </motion.p>
 
             <motion.div

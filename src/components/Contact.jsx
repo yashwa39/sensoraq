@@ -40,7 +40,7 @@ const Contact = () => {
             </h2>
             
             <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed">
-              Explore how multi-sensor food inspection and automated separation can contribute to safer, smarter, and more efficient food processing.
+              Explore multi-sensor inspection and automated separation for safer, smarter food processing.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ const Contact = () => {
                   Project Inquiries
                 </h3>
                 <p className="text-sage text-sm">
-                  Questions about the technology, architecture, or potential applications
+                  Questions about technology or applications
                 </p>
               </motion.div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
                   Collaboration
                 </h3>
                 <p className="text-sage text-sm">
-                  Interest in collaboration, research partnerships, or technical discussions
+                  Research partnerships or technical discussions
                 </p>
               </motion.div>
 
@@ -98,7 +98,7 @@ const Contact = () => {
                   General Contact
                 </h3>
                 <p className="text-sage text-sm">
-                  Any other questions or feedback about SensoraQ
+                  Questions or feedback about SensoraQ
                 </p>
               </motion.div>
             </div>

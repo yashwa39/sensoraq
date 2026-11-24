@@ -37,7 +37,7 @@ const ProcessFlow = () => {
           </h2>
           
           <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed">
-            Follow the journey of food products through intelligent multi-sensor inspection and automated separation.
+            Follow products through intelligent inspection and automated separation.
           </p>
         </motion.div>
 

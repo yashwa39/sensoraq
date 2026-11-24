@@ -12,21 +12,21 @@ const Problem = () => {
       number: '01',
       icon: Clock,
       title: 'Slow manual inspection',
-      description: 'Traditional visual inspection is time-consuming, inconsistent, and cannot detect internal defects or early-stage spoilage that lacks visible signs.',
+      description: 'Visual inspection is time-consuming and misses internal defects.',
       impact: 'Processing bottlenecks'
     },
     {
       number: '02',
       icon: Eye,
-      title: 'Hidden spoilage and adulteration',
-      description: 'Spoiled food often appears normal externally. Chemical changes, gas emission, and compositional adulterations escape visual detection.',
+      title: 'Hidden spoilage',
+      description: 'Spoiled food often looks normal. Chemical changes escape visual detection.',
       impact: 'Quality control failures'
     },
     {
       number: '03',
       icon: TrendingDown,
-      title: 'Unnecessary food wastage',
-      description: 'Without precise quality assessment, processors face false rejections of acceptable products or failures to identify truly defective ones.',
+      title: 'Food wastage',
+      description: 'Imprecise assessment leads to false rejections or missed defects.',
       impact: 'Financial losses'
     }
   ];
@@ -61,7 +61,7 @@ const Problem = () => {
           </h2>
           
           <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed">
-            Industrial food processing faces critical challenges that visual inspection alone cannot address.
+            Industrial food processing faces challenges that eyes alone cannot solve.
           </p>
         </motion.div>
 

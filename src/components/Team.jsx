@@ -38,7 +38,7 @@ const Team = () => {
           </h2>
           
           <p className="text-xl text-sage max-w-3xl mx-auto leading-relaxed">
-            A multidisciplinary team bringing together expertise in sensors, automation, digital systems, and food technology.
+            Expertise in sensors, automation, digital systems, and food technology.
           </p>
         </motion.div>
 
@@ -98,22 +98,16 @@ const Team = () => {
             
             <div className="space-y-6 text-sage leading-relaxed">
               <p>
-                SensoraQ is a proposed multi-sensor food quality detection and automated separation system developed to address challenges in industrial food processing. The project integrates diverse sensing technologies with digital processing and mechanical automation.
+                SensoraQ is a proposed multi-sensor food quality detection and automated separation system. The project integrates gas sensors, temperature, humidity, pH measurement, colour analysis, ultrasonic inspection, and spectroscopic techniques.
               </p>
               
               <p>
-                The system architecture combines gas sensors, temperature and humidity monitoring, pH measurement, colour analysis, ultrasonic inspection, and advanced spectroscopic techniques (FTIR and NMR). These sensor inputs are processed through signal conditioning circuits, digital logic gates, and microcontroller systems (Arduino and Raspberry Pi) to make quality classification decisions.
-              </p>
-
-              <p>
-                Based on the analysis, an automated sorting mechanism separates products into appropriate pathways. The goal is to improve food quality monitoring, detect potential spoilage and adulteration, reduce food wastage, and enhance processing efficiency.
+                Sensor inputs are processed through signal conditioning circuits, digital logic, and microcontrollers (Arduino and Raspberry Pi) to make quality decisions. An automated sorting mechanism separates products into appropriate pathways.
               </p>
 
               <div className="pt-6 border-t border-lime/10 mt-6">
                 <p className="text-sm text-sage">
-                  <span className="text-lime font-semibold">Note:</span> SensoraQ is presented as a proposed system architecture. 
-                  Sensor technologies and processing methods are based on established principles in food science and quality control. 
-                  Performance characteristics are illustrative and require validation through prototype development and testing.
+                  <span className="text-lime font-semibold">Note:</span> Proposed system architecture. Performance characteristics require validation through prototype development.
                 </p>
               </div>
             </div>
